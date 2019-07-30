@@ -1,0 +1,160 @@
+html, body{
+	height: 100%;
+	width: 100%;
+	margin: 0;
+}
+body {
+	background: #C4C4C4;
+	background-image: url(../img/bg.png);
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: 'Julius Sans One', sans-serif;
+}
+.container {
+	padding-top: 64px;
+	padding-left: 32px;
+}
+.logo img {
+	float: left;
+	padding-right: 16px;
+}
+.logo h1 {
+	display: inline;
+	color: #B89F57;
+	font-weight: normal;
+}
+.underline {
+	display: block;
+	border: none;
+	height: 1px;
+	opacity: 0.5;
+	background-color: #B89F57;
+	width: 100%;
+	margin-top: 16px;
+}
+.slogan {
+	font-size: 44px;
+	width: 800px;
+	line-height: 48px;
+	color: #fff;
+}
+.slogan p {
+	margin-top: 24px;
+	margin-bottom: 64px;
+}
+.card {
+	display: flex;
+}
+.info-card {
+	flex-basis: 22.2%;
+	padding-right: 32px;
+}
+.info-card h3 {
+	font-size: 28px;
+	line-height: 32px;
+	color: #B89F57;
+	font-weight: normal;
+	margin: 0;
+}
+.info-card p {
+	font-family: Source Sans Pro;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 22px;
+	color: #FFF;
+	margin: 0;
+}
+.info-card .underline {
+	width: 32px;
+	margin: 12px 0;
+}
+.button {
+	position: fixed;
+	bottom: 250px;
+	background: rgba(0, 0, 0, 0.5);
+	border: 2px solid #B89F57;
+	box-sizing: border-box;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 28px;
+	text-align: center;
+	width: 416px;
+
+}
+p.button {
+	margin: 0;
+}
+a {
+	text-decoration: none;
+	color: #B89F57;
+}
+@media (max-width: 1100px) {
+	.card {
+		display: inline;
+	}
+	.info-card {
+		width: 472px;
+		padding: 0;
+	}
+	.hidden {
+		display: none;
+	}
+	.button {
+		margin-top: 93px;
+	}
+	.selector span {
+		display: inline-block;
+		margin-top: 24px;
+		border: none;
+		height: 1px;
+		opacity: 0.5;
+		width: 8px;
+		padding-right: 4px;
+		background-color: #000;
+	}
+	.selector span.active {
+		background-color: #B89F57;
+	}
+}
+@media (max-width: 850px) {
+	body {
+		background-position: bottom right;
+	}
+	.slogan {
+		font-size: 32px;
+		width: 585px;
+		line-height: 36px;
+	}
+	.button {
+		margin-top: 64px;
+	}
+}
+@media (max-width: 640px) {
+	.container {
+		padding: 35px 16px 0 16px;
+	}
+	.slogan {
+		font-size: 28px;
+		width: 100%;
+		line-height: 32px;
+		color: #fff;
+	}
+	.slogan p {
+		margin-top: 16px;
+		margin-bottom: 48px;
+	}
+	.info-card h3 {
+		font-size: 24px;
+		line-height: 28px;
+	}
+	.info-card, .button {
+		width: 100%;
+	}
+	.button {
+		font-size: 19px;
+		line-height: 24px;
+		margin-top: 48px;
+		padding: 8px 16px;
+	}
+}
