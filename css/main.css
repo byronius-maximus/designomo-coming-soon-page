@@ -70,8 +70,8 @@ body {
 	margin: 12px 0;
 }
 .button {
-	position: fixed;
-	bottom: 250px;
+	/* position: fixed;
+	bottom: 250px; */
 	background: rgba(0, 0, 0, 0.5);
 	border: 2px solid #B89F57;
 	box-sizing: border-box;
@@ -80,11 +80,12 @@ body {
 	line-height: 28px;
 	text-align: center;
 	width: 416px;
-
+	margin-top: 17.11vh;
+	padding: 8px 13px;
 }
-p.button {
+/* p.button {
 	margin: 0;
-}
+} */
 a {
 	text-decoration: none;
 	color: #B89F57;
@@ -101,7 +102,7 @@ a {
 		display: none;
 	}
 	.button {
-		margin-top: 93px;
+		margin-top: 38vh;
 	}
 	.selector span {
 		display: inline-block;
@@ -116,6 +117,25 @@ a {
 	.selector span.active {
 		background-color: #B89F57;
 	}
+	@keyframes fade {
+		0%		{ opacity: 0; }
+		11.11%	{ opacity: 1; }
+		33.33%	{ opacity: 1; }
+		44.44%	{ opacity: 0; }
+		100	{ opacity: 0; }
+	  }
+	  .card .info-card {
+		opacity:0;
+		animation-name: fade;
+		animation-duration: 12s;
+		animation-iteration-count: infinite;
+		position:absolute;
+		left:32px;
+
+	}
+	.card .info-card:nth-child(1) { animation-delay: 0s; }
+	.card .info-card:nth-child(2) { animation-delay: 4s; }
+	.card .info-card:nth-child(3) { animation-delay: 8s; }
 }
 @media (max-width: 850px) {
 	body {
@@ -127,7 +147,7 @@ a {
 		line-height: 36px;
 	}
 	.button {
-		margin-top: 64px;
+		margin-top: 25vh;
 	}
 }
 @media (max-width: 640px) {
@@ -148,13 +168,22 @@ a {
 		font-size: 24px;
 		line-height: 28px;
 	}
-	.info-card, .button {
+	.card .info-card {
+		left: 16px;
+	}
+	.card {
 		width: 100%;
 	}
 	.button {
 		font-size: 19px;
 		line-height: 24px;
-		margin-top: 48px;
+		margin-top: 32.4vh;
 		padding: 8px 16px;
+		width: 100%;
+	}
+}
+@media (max-width: 490px) {
+	.info-card {
+		width: 90%;
 	}
 }
