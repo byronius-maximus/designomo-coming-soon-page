@@ -92,6 +92,30 @@ a {
 	text-decoration: none;
 	color: #B89F57;
 }
+.connect {
+	margin-top: 92px;
+	display: flex;
+	align-items: center;
+	position: absolute;
+	bottom: 136px;
+}
+.connect p {
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: nomral;
+	color: #fff;
+	margin: 0 4px 0 0;
+}
+.connect img {
+	padding: 0 12px;
+}
+.connect span {
+	width: 1px;
+	height: 24px;
+	background-color: #B89F57;
+	opacity: 0.5;
+	border: none;
+}
 @media (max-width: 1400px) {
 	body {
 		background-size: auto 100%;
@@ -156,12 +180,18 @@ a {
 	.pagination span:nth-child(3) {
 		animation-delay: 8s;
 	}
+	.connect {
+		bottom: 120px;
+	}
 }
 @media (max-width: 850px) {
 	.tagline {
 		max-width: 585px;
 		font-size: 32px;
 		line-height: 36px;
+	}
+	.connect {
+		bottom: 429px;
 	}
 }
 @media (max-width: 640px) {
@@ -201,6 +231,21 @@ a {
 	}
 	.button {
 		margin-top: 48px;
+	}
+	.connect {
+		bottom: 0px;
+		background: #000;
+		opacity: 0.5;
+		width: 100%;
+		line-height: 40px;
+		left: 0;
+	}
+	.connect p {
+		margin-left: 16px;
+	}
+	.connect a {
+		margin-bottom: -5px;
+		margin-top: 8px;
 	}
 }
 @keyframes fade {
