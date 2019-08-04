@@ -9,6 +9,7 @@ body {
 	background-position: right bottom;
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-attachment: fixed;
 	font-family: 'Julius Sans One', sans-serif;
 }
 .container {
@@ -82,11 +83,14 @@ body {
 	font-size: 24px;
 	line-height: 28px;
 	text-align: center;
-	padding: 8px 30px;
 	margin: 0;
 	bottom: 17.5vw;
 	width: auto;
 	display: inline-block;
+}
+.button a {
+	display: block;
+	padding: 8px 30px;
 }
 a {
 	text-decoration: none;
@@ -94,6 +98,7 @@ a {
 }
 .connect {
 	margin-top: 64px;
+	padding-bottom: 24px;
 	display: flex;
 	align-items: center;
 }
@@ -210,8 +215,10 @@ a {
 	.button {
 		font-size: 19px;
 		line-height: 24px;
-		padding: 8px 16px;
 		width: 100%;
+	}
+	.button a {
+		padding: 8px 16px;
 	}
 	.connect {
 		position: fixed;
@@ -220,6 +227,7 @@ a {
 		width: 100%;
 		line-height: 40px;
 		left: 0;
+		padding-bottom: 0;
 	}
 	.connect p {
 		margin-left: 16px;
