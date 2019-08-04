@@ -93,11 +93,9 @@ a {
 	color: #B89F57;
 }
 .connect {
-	margin-top: 92px;
+	margin-top: 64px;
 	display: flex;
 	align-items: center;
-	position: absolute;
-	bottom: 136px;
 }
 .connect p {
 	font-size: 16px;
@@ -180,18 +178,12 @@ a {
 	.pagination span:nth-child(3) {
 		animation-delay: 8s;
 	}
-	.connect {
-		bottom: 120px;
-	}
 }
 @media (max-width: 850px) {
 	.tagline {
 		max-width: 585px;
 		font-size: 32px;
 		line-height: 36px;
-	}
-	.connect {
-		bottom: 429px;
 	}
 }
 @media (max-width: 640px) {
@@ -203,6 +195,9 @@ a {
 		line-height: 32px;
 		margin-top: 16px;
 		margin-bottom: 48px;
+	}
+	.underline {
+		width: calc( 100% + 16px );
 	}
 	.cards .card {
 		flex-basis: 448px;
@@ -218,6 +213,21 @@ a {
 		padding: 8px 16px;
 		width: 100%;
 	}
+	.connect {
+		position: fixed;
+		bottom: 0px;
+		background: rgba(0, 0, 0, 0.5);
+		width: 100%;
+		line-height: 40px;
+		left: 0;
+	}
+	.connect p {
+		margin-left: 16px;
+	}
+	.connect a {
+		margin-bottom: -5px;
+		margin-top: 8px;
+	}
 }
 @media (max-width: 480px) {
 	.cards .card {
@@ -231,21 +241,6 @@ a {
 	}
 	.button {
 		margin-top: 48px;
-	}
-	.connect {
-		bottom: 0px;
-		background: #000;
-		opacity: 0.5;
-		width: 100%;
-		line-height: 40px;
-		left: 0;
-	}
-	.connect p {
-		margin-left: 16px;
-	}
-	.connect a {
-		margin-bottom: -5px;
-		margin-top: 8px;
 	}
 }
 @keyframes fade {
