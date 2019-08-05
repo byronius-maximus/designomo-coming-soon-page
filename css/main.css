@@ -88,6 +88,10 @@ body {
 	width: auto;
 	display: inline-block;
 }
+.button:hover {
+	background: #B89F57;
+
+}
 .button a {
 	display: block;
 	padding: 8px 30px;
@@ -95,6 +99,9 @@ body {
 a {
 	text-decoration: none;
 	color: #B89F57;
+}
+a:hover {
+	color: #FFF;
 }
 .connect {
 	margin-top: 64px;
