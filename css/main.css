@@ -87,6 +87,7 @@ body {
 	bottom: 17.5vw;
 	width: auto;
 	display: inline-block;
+	transition: all 0.25s ease-out;
 }
 .button:hover {
 	background: #B89F57;
@@ -116,8 +117,13 @@ a:hover {
 	color: #fff;
 	margin: 0 4px 0 0;
 }
-.connect img {
+.connect svg {
+	fill: #B89F57;
 	padding: 0 12px;
+	transition: fill 0.25s ease-out;
+}
+.connect a:hover svg {
+	fill: #FFF;
 }
 .connect span {
 	width: 1px;
@@ -241,7 +247,7 @@ a:hover {
 	}
 	.connect a {
 		margin-bottom: -5px;
-		margin-top: 8px;
+		padding-top: 8px;
 	}
 }
 @media (max-width: 480px) {
